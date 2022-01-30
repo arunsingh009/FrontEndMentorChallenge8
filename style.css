@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --primary1: hsl(183, 100%, 15%);
+    --primary2: hsl(186, 14%, 43%);
+    --primary3: hsl(184, 14%, 56%);
+    --primary4: hsl(185, 41%, 84%);
+    --secondary:hsl(172, 67%, 45%);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head{
+    text-transform: uppercase;
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;   
+}
+.head h1{
+    font-weight: 400;
+    font-size: 28px;
+}
+.card{
+    width: 650px;
+    height: 350px;
+    border: 2px solid transparent;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box1,.box2{
+    width: 45%;
+    height: 300px;
+    /* border: 2px solid black; */
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.bill,.selTip{
+    width: 90%;
+    height: 60px;
+    /* border: 2px solid black; */
+}
+.bill p,.selTip p{
+    font-size: 14px;
+    font-weight: 600;
+    color:var(--primary1);
+}
+.in{
+    display: flex;
+    justify-content: space-between;
+}
+#er2,#er1{
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+.bill input{
+    width: 90%;
+    margin-left: 10px;
+    text-align-last: right;
+    height: 30px;
+    border: none;
+    /* outline: none; */
+    font-size: 24px;
+    caret-color: transparent;
+    background-color: hsl(180, 64%, 95%);
+    padding-right: 10px;
+    border: 1px solid transparent;
+    color:var(--primary3);
+    
+}
+.bill input:focus{
+    outline: 2px solid var(--secondary);
+}
+.bill input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+}
+.selTip{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.percentage{
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.percentage input{
+    width: 30%;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.tipP{
+    background-color: var(--primary1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.tipP:hover{
+    background-color: var(--secondary);
+
+}
+.tip{
+    border:none ;
+    background-color: hsl(180, 64%, 95%);
+    color: var(--primary3);
+    outline: none;
+    font-weight: 400;
+}
+.box2{
+    background-color: var(--primary1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.amount{
+    width: 90%;
+    height: 150px;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.a1,.a2{
+    width: 90%;
+    height: 50px;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ap{
+    font-size: 13px;
+    font-weight: 600;
+    color:white;
+    margin-left: 10px;
+}
+.span1{
+    color: var(--primary4);
+    font-weight: 300;
+}
+.abill{
+    font-size: 28px;
+    font-weight: 700;
+    color:var(--secondary);
+    margin-right: 15px;
+}
+.reset{
+    width: 90%;
+    height: 100px;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset button{
+    width: 90%;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    /* background-color: hsl(189, 41%, 97%); */
+    /* mix-blend-mode:overlay; */
+    text-transform: uppercase;
+    /* opacity: 0.7; */
+
+}
+.reset button:hover{
+    background-color: var(--secondary);
+}
+.help{
+    margin-top: 10px;
+    padding: 10px;
+}
+@media(max-width:700px){
+    main{
+        height: fit-content;
+        padding-bottom: 10vh ;
+    }
+    .card{
+        height: 700px;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .box1,.box2{
+        width: 90%;
+    }
+}
