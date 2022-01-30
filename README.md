@@ -45,8 +45,8 @@ Normal View
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click me](https://github.com/arunsingh009/FrontEndMentorChallenge8)
+- Live Site URL: [Click me](https://arunsingh009.github.io/FrontEndMentorChallenge8/)
 
 ## My process
 
