@@ -15,6 +15,7 @@ function reset() {
   c.placeholder="CUSTOM";
   perPerson.innerHTML = "$0.00";
   totalAmount.innerHTML = "$0.00";
+  document.getElementById("btn").disabled="true";
 }
 function validate() {
   var amount = +document.getElementById("amount").value;
@@ -44,10 +45,12 @@ function t1() {
   var people = +document.getElementById("people").value;
   var tipamount = 0.05;
   if(validate()==true){
-  tips = (amount * tipamount) / people;
-  total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+    tips = (amount * tipamount) / people;
+    var ti =tips.toFixed(2);
+    total = amount / people + tips;
+    var to=total.toFixed(2);
+    perPerson.innerHTML = `$${ti}`;
+    totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
@@ -58,9 +61,11 @@ function t1() {
   var tipamount = 0.10;
   if(validate()==true){
   tips = (amount * tipamount) / people;
+  var ti =tips.toFixed(2);
   total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+  var to=total.toFixed(2);
+  perPerson.innerHTML = `$${ti}`;
+  totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
@@ -70,10 +75,12 @@ function t1() {
   var people = +document.getElementById("people").value;
   var tipamount = 0.15;
   if(validate()==true){
-  tips = (amount * tipamount) / people;
-  total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+    tips = (amount * tipamount) / people;
+    var ti =tips.toFixed(2);
+    total = amount / people + tips;
+    var to=total.toFixed(2);
+    perPerson.innerHTML = `$${ti}`;
+    totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
@@ -83,10 +90,12 @@ function t1() {
   var people = +document.getElementById("people").value;
   var tipamount = 0.25;
   if(validate()==true){
-  tips = (amount * tipamount) / people;
-  total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+    tips = (amount * tipamount) / people;
+    var ti =tips.toFixed(2);
+    total = amount / people + tips;
+    var to=total.toFixed(2);
+    perPerson.innerHTML = `$${ti}`;
+    totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
@@ -96,10 +105,12 @@ function t1() {
   var people = +document.getElementById("people").value;
   var tipamount = 0.5;
   if(validate()==true){
-  tips = (amount * tipamount) / people;
-  total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+    tips = (amount * tipamount) / people;
+    var ti =tips.toFixed(2);
+    total = amount / people + tips;
+    var to=total.toFixed(2);
+    perPerson.innerHTML = `$${ti}`;
+    totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
@@ -113,9 +124,11 @@ function t1() {
   if(tipamount!=0){
   if(validate()==true){
   tips = (amount * (tipamount/100)) / people;
+  var ti =tips.toFixed(2);
   total = amount / people + tips;
-  perPerson.innerHTML = `$${tips}`;
-  totalAmount.innerHTML = `$${total}`;
+  var to=total.toFixed(2);
+  perPerson.innerHTML = `$${ti}`;
+  totalAmount.innerHTML = `$${to}`;
   document.getElementById("btn").removeAttribute("disabled");
   }else{
       return false;
