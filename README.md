@@ -28,15 +28,20 @@ Users should be able to:
 - Calculate the correct tip and total cost of the bill per person
 
 ### Screenshot
+Active State
 <div>
-<img src="./output/a1.png" alt="a1" width="30%" height="300px">
-<img src="./output/a2.png" alt="a2" width="30%" height="300px">
-<img src="./output/a3.png" alt="a3" width="30%" height="300px">
-<img src="./output/a4.png" alt="a4" width="30%" height="300px">
-<img src="./output/a5.png" alt="a5" width="30%" height="300px">
+<img src="./output/a1.png" alt="a1" width="45%" height="300px">
+<img src="./output/a2.png" alt="a2" width="45%" height="300px">
+<img src="./output/a3.png" alt="a3" width="45%" height="300px">
+<img src="./output/a4.png" alt="a4" width="45%" height="300px">
+<img src="./output/a5.png" alt="a5" width="45%" height="300px">
+<img src="./output/a6.png" alt="a5" width="45%" height="300px">
 </div>
-![](./output/d.png)
-![](./output/m.png)
+Normal View
+<div>
+  <img src="./output/d.png" alt="a5" width="100%" height="100%">
+  <img src="./output/m.png" alt="a5" width="50%" >
+</div>
 
 ### Links
 
